@@ -25,3 +25,8 @@ test('should resolve string', assert => {
   var date = new Date('01-01-2020')
   assert.equal(date.getTime(), resolve('01-01-2020'))
 })
+
+test('should not resolve other primitive', assert => {
+  assert.plan(1)
+  assert.equal(false, !!resolve(true))
+})
