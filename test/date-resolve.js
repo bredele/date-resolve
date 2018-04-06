@@ -16,5 +16,12 @@ test('should resolve date', assert => {
 test('should resolve number', assert => {
   assert.plan(1)
   var date = new Date()
-  asset.equal(date.getTime(), resolve(date.getTime()))
+  assert.equal(date.getTime(), resolve(date.getTime()))
+})
+
+
+test('should resolve string', assert => {
+  assert.plan(1)
+  var date = new Date('01-01-2020')
+  assert.equal(date.getTime(), resolve('01-01-2020'))
 })
