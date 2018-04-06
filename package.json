@@ -1,0 +1,29 @@
+{
+  "name": "date-resolve",
+  "version": "1.0.0",
+  "description": "Resolce Numbers, Dates or Strings into dates in milliseconds",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/date-resolve.git"
+  },
+  "keywords": [
+    "date",
+    "parse",
+    "resolve",
+    "milliseconds",
+    "format"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/date-resolve/issues"
+  },
+  "homepage": "https://github.com/bredele/date-resolve#readme",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
