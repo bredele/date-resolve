@@ -30,3 +30,9 @@ test('should not resolve other primitive', assert => {
   assert.plan(1)
   assert.equal(false, !!resolve(true))
 })
+
+
+test('should not resolve string with wrong format', assert => {
+  assert.plan(1)
+  assert.equal(false, !!resolve('something'))
+})
